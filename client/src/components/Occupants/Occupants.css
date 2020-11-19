@@ -1,0 +1,29 @@
+.occupantsContainer {
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    background-color: #132639;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px#132639;
+    margin-left: 6px;
+    overflow-y: scroll;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+}
+
+.userInRoom {
+    color: white;
+}
+
+.occupantsHeader {
+    margin: auto;
+    color: white;
+}
+
+

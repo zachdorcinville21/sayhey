@@ -1,0 +1,69 @@
+.outerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #000000;
+    border-radius: 8px;
+    height: 60%;
+    width: 35%;
+  }
+
+  .usersInRoom {
+    position: absolute;
+    width: 30%;
+    height:40%;
+    left: 68vw;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 60%;
+    }
+
+    .usersInRoom {
+      position: relative;
+      left: 0;
+    }
+  }
+
+
+  @media only screen and (max-width: 592px) {
+    .outerContainer {
+      flex-direction: column;
+    }
+
+    .usersInRoom {
+      height: 20%;
+    }
+  }
+
+
+  @media only screen and (max-width: 490px) {
+    .usersInRoom {
+      visibility: hidden;
+      left: 0;
+      right: 0;
+    }
+  }
+
+
